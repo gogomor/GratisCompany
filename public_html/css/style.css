@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*FLEXBOX ZA STICKY FOOTER*/
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+  background: white;
+ 	
+}
+
+
+
+/*HEADER*/
+.nav {
+	position: relative;
+	/*background: url('../images/menu_wall.jpg');*/
+	-webkit-box-shadow: 	0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	z-indexmoz-box-shadow:  0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	box-shadow:         	0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	background: white;
+}
+.nav ul {
+	width: 1000px;
+	margin:0 auto;
+	text-align: right;
+	position: relative;
+	padding-right: 100px;
+	
+}
+
+.nav ul li {
+	display: inline-block;
+	padding: 14px 16px;
+	color:black;
+
+}
+.nav ul li a {
+	font-family: 'Covered+By+Your+Grace', serif;
+	color: #7e7e7e;
+	font-size: 25px;
+	transition: color 1s;
+}
+
+.nav ul li a:hover {
+	text-decoration: none;
+	color:#B5D534;
+}
+
+.logo {
+	/*border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;*/
+	/*KRUG*/
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	text-align: center;
+	background: white;
+	-webkit-box-shadow: 	0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	z-indexmoz-box-shadow:  0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	box-shadow:         	0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	z-index: 100;
+ 	
+}
+.logo .logo-slika {
+	width: 100px;
+	height: auto;
+	
+}
+.logo .logo-natpis {
+	width: 300px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: -50px;
+}
+
+/* SLIDER  */
+#hero{  
+    height: 600px;
+    width: 100%;
+    position: relative; 
+    margin:0 auto;  
+    margin-top: 150px;
+}
+#hero div {    
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    position: absolute;
+    z-index: 0;
+    text-align: center;    
+    overflow: hidden;    
+}
+#hero div.previous{
+    z-index: 1;
+}
+#hero div.current {
+    z-index: 2;
+}
+#hero div img{
+    width: 100%;
+}
+
+
+/*FOOTER*/
+footer {
+	text-align: center;
+	height: 100px;
+	-webkit-box-shadow: 	0px -3px 5px rgba(100, 100, 100, 0.49);
+ 	z-indexmoz-box-shadow:  0px -3px 5px rgba(100, 100, 100, 0.49);
+ 	box-shadow:         	0px -3px 5px rgba(100, 100, 100, 0.49);
+	
+}
+
+/*USLUGE DROP*/
+
+.usluge {
+	position: relative;
+	
+}
+.usluge-slide{
+	width: 460px;
+	height: 80px;
+	position: absolute;
+	text-align: left;
+	left:-1px;
+	top:60px;
+	left:15px;
+	background: white;
+	padding-top:14px;
+	padding-bottom: 14px;
+	padding-left: 15px;
+	-webkit-box-shadow: 	0px 5px 5px rgba(100, 100, 100, 0.49);
+ 	z-indexmoz-box-shadow:  0px 5px 5px rgba(100, 100, 100, 0.49);
+ 	box-shadow:         	0px 5px 5px rgba(100, 100, 100, 0.49);
+ 	visibility: hidden;
+ 	transition: visibility .5s, opacity .3s linear;
+ 	opacity: 0;
+
+}
+.usluge:hover .usluge-slide{
+	visibility: visible;
+	opacity: 1;
+ 	
+ 	
+}
+.nav ul .usluge-slide a{
+	display: inline-block;
+	margin-right: 20px;
+
+	font-family: 'Cormorant Garamond', serif;
+	/*font-family: 'Gruppo', cursive;*/
+	font-size: 22px;
+	/*font-family: 'Italianno', cursive;*/
+	/*font-family: 'Text Me One', sans-serif;*/
+}
+
+/*PORTAL*/
+
+.glavni-portal {
+	width: 600px;
+	height: 600px;
+	
+	margin:0 auto;
+	margin-top: 100px;
+	
+	position: relative;
+}
+.krug {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	
+	/*background: url(../images/gray1.jpg);*/
+	transition: transform .5s;
+	transition: box-shadow .5s;
+}
+.krug:hover {
+	/*transform: rotateZ(30deg);
+	box-shadow: inset 0 0 0 25px lime;*/
+}
+.krug img {
+	width: 280px;
+	height: 280px;	
+	border-radius: 50%;
+	transition:all 0.5s ease;
+	position: absolute;
+	left:3%;
+	top:3%;
+	-webkit-box-shadow: 	0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	z-indexmoz-box-shadow:  0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	box-shadow:         	0px 5px 5px rgba(100, 100, 100, 0.49);
+
+
+}
+.krug img:hover {
+	/* transform: rotateZ(-30deg);*/
+
+        
+
+
+
+	 
+}
+.rotirani {
+	left:146px;
+	top:-4px;
+	width: 305px;
+	height: 305px;
+	transition: transform 2s;
+	/*background: url(../images/spin5.jpg);*/
+	/*boja zelena #B5D534
+	boja siva #7D7D7D*/
+
+	 /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #B5D534 , #f97c13); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #B5D534, #f97c13); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #B5D534, #f97c13); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #B5D534 , #f97c13); /* Standard syntax */
+	background: url('../images/spin1.jpg');
+	visibility: hidden;
+	border:2px solid black;
+	
+}
+
+
+
+.krug h2 {
+	position: absolute;
+	top:34%;
+	left: 15%;
+	width: 70%;
+	/*font-family: 'Cormorant Garamond', serif;*/
+	font-family: 'Gruppo', cursive;
+	/*font-family: 'Italianno', cursive;*/
+	/*font-family: 'Text Me One', sans-serif;*/
+	
+	font-size: 40px;
+	color:white;
+	padding:14px 16px;
+	border-radius: 10px;
+	text-align: center;
+	transition: all 1s ease;
+	display: none;
+	font-weight: bolder;
+	
+	
+}
+/*.krug img:hover {
+	transform:scale(1.1,1.1);
+}*/
+
+.proizvodnja {
+	left: 25%;
+	z-index: 10;
+	
+	
+}
+
+
+.grafika {
+	top:147px;
+	left:-116px;
+	background: url(../images/grafika.png);
+	background-size: cover;
+	transform: scale(0.9,0.9);
+	position: relative;
+	transition: all .5s ease;
+	-webkit-box-shadow: 	0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	z-indexmoz-box-shadow:  0px 3px 5px rgba(100, 100, 100, 0.49);
+ 	box-shadow:         	0px 5px 5px rgba(100, 100, 100, 0.49);
+}
+
+/*GRAFIKA EFEKAT VODOPADA*/
+
+.grafika:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	background: url('../images/krug-tekst.png');
+	background-position: center;
+	background-size: cover;
+	transition: all 1s ease;
+	border-radius: 50%;	
+}
+.grafika:hover:before {
+	height: 100%;
+}
+
+
+.trgovina {
+	left:25%;
+	top:52%;
+}
+.trgovina img:hover{
+	transform: scale(1.1,1.1);
+} 
+.obiljezavanje {
+	top:25%;
+	left:70%;
+	
+}
+.obiljezavanje img {
+	opacity: 0.7;
+}
+.obiljezavanje img:hover{
+	opacity: 1;
+}
+
+/*JEZICI*/
+
+.mne, .eng {
+	width:30px;
+	height: auto;
+}
+.mne {
+	width:33px;
+}
+
+/*PORTAL CETVRTINE*/
+
+.krug-container {
+	border:1px solid black;
+	width: 810px;
+	height: 810px;
+	margin:0 auto;
+	margin-top: 70px;
+}
+.cetvrtina {
+	border:1px solid blue;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+}
+.gore-levo {
+	border-top-left-radius: 50%;
+	background:url(../images/proizvodnja.png);
+}
+.gore-desno {
+	border-top-right-radius: 50%;
+	background:url(../images/trgovina.png);
+}
+.dole-levo {
+	border-bottom-left-radius: 50%;
+	background:url(../images/grafika.png);
+}
+.dole-desno {
+	border-bottom-right-radius: 50%;
+	background:url(../images/obiljezavanje.png);
+}
+
+
+
+
